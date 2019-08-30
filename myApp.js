@@ -5,7 +5,7 @@ const app = express();
 
 
 //serve static files, e.g. style.css 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static('public'));
 
 //display index page index.html @ "/"
 app.get("/", function(req, res){
@@ -13,6 +13,7 @@ app.get("/", function(req, res){
 }); 
 
 //listening port => localhost:3000/
+const portNumber = process.env.PORT || 3000; 
 app.listen("3000", function(req,res){
-  console.log("listening on port 3000"); 
+  console.log("listening on port "+ portNumber); 
 });
