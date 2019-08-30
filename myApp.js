@@ -14,6 +14,6 @@ app.get("/", function(req, res){
 
 //listening port => localhost:3000/
 const portNumber = process.env.PORT || 3000; 
-app.listen("3000", function(req,res){
+app.listen(portNumber, function(req,res){
   console.log("listening on port "+ portNumber); 
 });
