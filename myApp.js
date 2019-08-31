@@ -17,3 +17,12 @@ const portNumber = process.env.PORT || 3000;
 app.listen(portNumber, function(req,res){
   console.log("listening on port "+ portNumber); 
 });
+
+
+app.get("/api/timestamp/:date_string?", function(req,res){
+    let dateString = req.params.date_string; 
+    console.log(dateString); 
+    let date = new Date(dateString);
+    res.json({"unix": date.getTime(), "utc" : date.toUTCString() }); 
+
+}); 
