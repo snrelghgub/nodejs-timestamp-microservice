@@ -5,6 +5,7 @@ const app = express();
 //serve static files, e.g. style.css 
 app.use(express.static('public'));
 
+
 //display index page index.html @ "/"
 app.get("/", function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
