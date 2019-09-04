@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snrelghgub/nodejs-timestamp-microservice.git"
+    "url": "git+https://github.com/snrelghgub/timestamp-microservice.git"
   },
   "author": "Taizy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/snrelghgub/nodejs-timestamp-microservice/issues"
+    "url": "https://github.com/snrelghgub/timestamp-microservice/issues"
   },
-  "homepage": "https://github.com/snrelghgub/nodejs-timestamp-microservice#readme",
+  "homepage": "https://github.com/snrelghgub/timestamp-microservice#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
