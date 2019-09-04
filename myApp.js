@@ -21,15 +21,16 @@ app.listen(portNumber, function (req, res) {
 app.get("/api/timestamp/:date_string?", function (req, res) {
   let dateString = req.params.date_string;
 
-  let isValid = (dString) => {
+    let isValid = (dString) => {
     //if the string is undefined return true (dString==undefined)
     if (dString == undefined) {
-      return undefined;
+       return undefined;
     }
 
     //checks the validity of date format required: YYYY-MM-DD
     let validDate = (dString) => {
       date = new Date(dString);
+      console.log("test"); 
       if (date.toUTCString() != "Invalid Date") {
         return true;
       }
