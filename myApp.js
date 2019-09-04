@@ -84,7 +84,7 @@ app.get("/api/timestamp/:date_string?", function (req, res) {
   //ex case: api/timestamp/2015-12-10
   //ex case: api/timestamp/1450137600
   if (isValid(dateString) == true) {
-    if(validTimestamp(dateString)==true){
+    if(validTimestamp(dateString)==true && !isNaN(dateString)==true){
       let date = new Date(parseInt(dateString));
       res.json({ "unix": date.getTime(), "utc": date.toUTCString() });
     }
